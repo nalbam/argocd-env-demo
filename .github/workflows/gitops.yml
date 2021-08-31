@@ -1,17 +1,12 @@
 name: gitops
 
 on:
-  push:
-    branches:
-      - main
-      - master
   repository_dispatch:
     types:
-      - build
       - gitops
 
 jobs:
-  gitops:
+  build:
     runs-on: ubuntu-latest
 
     steps:
