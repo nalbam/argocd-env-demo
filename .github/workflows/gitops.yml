@@ -7,7 +7,7 @@ on:
       - gitops
 
 jobs:
-  build:
+  gitops:
     runs-on: ubuntu-latest
 
     steps:
